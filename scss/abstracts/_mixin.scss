@@ -10,7 +10,7 @@ $grid-breakpoints: (
 @mixin breakpoint($key) {
   $breakpoint: map-get($grid-breakpoints, $key);
   @if ($breakpoint) {
-    @media (min-width: ($breakpoint - 0.02)) {
+    @media (max-width: ($breakpoint - 0.02)) {
       @content;
     }
   } @else {
