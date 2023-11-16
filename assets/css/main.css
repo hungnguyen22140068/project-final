@@ -1232,6 +1232,11 @@ html.dark {
 .header {
   background: var(--header-bg-color);
 }
+@media (min-width: 991.98px) {
+  .header {
+    width: 100px;
+  }
+}
 .header--sticky {
   position: sticky;
   z-index: 9;

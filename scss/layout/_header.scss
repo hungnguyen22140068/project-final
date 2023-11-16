@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 // %flexItemsCenter dùng để thay những đoạn code có df:f và al:c thì thêm: @extend %flexItemsCenter
 %flexItemsCenter {
   display: flex;
@@ -6,6 +8,10 @@
 
 .header {
   background: var(--header-bg-color);
+
+  @include abstracts.breakpoint(lg) {
+    width: 100px;
+  }
 
   &--sticky {
     position: sticky;
