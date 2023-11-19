@@ -1281,11 +1281,6 @@ html.dark {
 @media (max-width: 767.98px) {
   .top-bar {
     justify-content: space-between;
-    padding: 16px 0;
-  }
-}
-@media (max-width: 575.98px) {
-  .top-bar {
     padding: 16px;
   }
 }
@@ -1463,6 +1458,11 @@ html.dark {
   width: 36px;
   height: 36px;
 }
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
+}
 .menu-column__content {
   flex: 1;
 }
@@ -1477,8 +1477,8 @@ html.dark {
   bottom: 0;
   width: 24px;
   height: 24px;
-  object-fit: contain;
   filter: var(--menu-column-icon-color);
+  object-fit: contain;
 }
 .menu-column__heading {
   margin-top: 6px;

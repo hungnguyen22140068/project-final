@@ -33,10 +33,6 @@
 
   @include abstracts.breakpoint(md) {
     justify-content: space-between;
-    padding: 16px 0;
-  }
-
-  @include abstracts.breakpoint(sm) {
     padding: 16px;
   }
 
