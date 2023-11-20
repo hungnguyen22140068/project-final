@@ -12,15 +12,29 @@
     </a>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar show">
+    <nav id="navbar" class="navbar hide">
       <!-- Arrow left -->
       <button class="navbar__close-btn js-toggle" toggle-target="#navbar">
-        <img src="./assets/icons/arrow-left.svg" alt="" />
+        <img src="./assets/icons/arrow-left.svg" alt="" class="icon" />
       </button>
+
+      <!-- btn buy -->
+      <a href="#!" class="navbar-btn d-none d-md-flex">
+        <img src="./assets/icons/buy.svg" alt="" class="icon navbar-btn__icon" />
+        <span class="navbar-btn__title">Card</span>
+        <span class="navbar-btn__qnt">3</span>
+      </a>
+
+      <!-- btn heart -->
+      <a href="#!" class="navbar-btn d-none d-md-flex">
+        <img src="./assets/icons/heart.svg" alt="" class="icon navbar-btn__icon" />
+        <span class="navbar-btn__title">Favorite</span>
+        <span class="navbar-btn__qnt">3</span>
+      </a>
 
       <ul class="navbar__list js-dropdown-list">
         <li class="navbar__item">
-          <a href="#!" class="navbar__link">
+          <a href="#!" class="navbar__link navbar__link--main">
             Departments
             <img src="./assets/icons/arrow-down.svg" alt="arrow down" class="icon navbar__arrow" />
           </a>
@@ -2613,7 +2627,7 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="#!" class="navbar__link">
+          <a href="#!" class="navbar__link navbar__link--main">
             Grocery
             <img src="./assets/icons/arrow-down.svg" alt="arrow down" class="icon navbar__arrow" />
           </a>
@@ -2884,7 +2898,7 @@
           </div>
         </li>
         <li class="navbar__item">
-          <a href="#!" class="navbar__link">
+          <a href="#!" class="navbar__link navbar__link--main">
             Beauty
             <img src="./assets/icons/arrow-down.svg" alt="arrow down" class="icon navbar__arrow" />
           </a>

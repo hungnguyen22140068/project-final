@@ -4,6 +4,8 @@ html {
   --text-color: #1a162e;
   --icon-color: brightness(0) saturate(100%) invert(7%) sepia(63%) saturate(1271%) hue-rotate(223deg) brightness(84%)
     contrast(94%);
+  --icon-color-reponsive: brightness(0) saturate(100%) invert(79%) sepia(2%) saturate(392%) hue-rotate(191deg)
+    brightness(95%) contrast(91%);
 
   --body-bg: #f6f6f6;
   --header-bg-color: #eee;
@@ -21,4 +23,10 @@ html {
   --dropdown-bg-color: #fff;
   --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
   --top-menu-color-border: #d2d1d6;
+  --menu-column-heading-color: #1a162e;
+  --menu-column-link-color: #1a162e;
+
+  // Sidebar
+  --sidebar-bg: #fff;
+  --sidebar-shadow: rgba(200, 200, 200, 0.4);
 }
