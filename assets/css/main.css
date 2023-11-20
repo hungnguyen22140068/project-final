@@ -1428,6 +1428,8 @@ html.dark {
   .navbar__list {
     flex-direction: column;
     align-items: flex-start;
+    height: calc(100% - 26px);
+    overflow-y: auto;
   }
 }
 .navbar__item:hover .dropdown {
@@ -1436,9 +1438,6 @@ html.dark {
 @media (max-width: 991.98px) {
   .navbar__item {
     width: 100%;
-  }
-  .navbar__item:hover .dropdown {
-    display: none;
   }
 }
 .navbar__link {
@@ -1544,6 +1543,13 @@ html.dark {
   padding-top: 54px;
   display: none;
 }
+@media (max-width: 991.98px) {
+  .dropdown {
+    position: initial;
+    display: block;
+    padding-top: 0;
+  }
+}
 .dropdown__inner {
   --inner-padding: 30px;
   position: relative;
@@ -1561,6 +1567,17 @@ html.dark {
   transform: translate(-50%);
   filter: var(--dropdown-arrow-color);
 }
+@media (max-width: 991.98px) {
+  .dropdown__inner {
+    padding: 0 40px;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .dropdown__inner::before {
+    content: none;
+  }
+}
 
 .top-menu {
   --main-column-width: 292px;
@@ -1573,6 +1590,13 @@ html.dark {
   border-right: 1px solid var(--top-menu-color-border);
   overflow-y: auto;
 }
+@media (max-width: 991.98px) {
+  .top-menu__main {
+    width: 100%;
+    height: auto;
+    border-right: none;
+  }
+}
 
 .menu-column {
   display: flex;
@@ -1581,11 +1605,26 @@ html.dark {
 .menu-column + .menu-column {
   margin-top: 21px;
 }
+@media (max-width: 991.98px) {
+  .menu-column {
+    margin-top: 14px;
+  }
+}
 .menu-column__icon {
   position: relative;
   flex-shrink: 0;
   width: 36px;
   height: 36px;
+}
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .menu-column__icon {
+    display: block;
+  }
 }
 .menu-column__content {
   flex: 1;
@@ -1611,8 +1650,18 @@ html.dark {
   line-height: 150%;
   color: var(--menu-column-heading-color);
 }
+@media (max-width: 991.98px) {
+  .menu-column__heading {
+    margin-bottom: 26px;
+  }
+}
 .menu-column__list {
   margin-top: 17px;
+}
+@media (max-width: 991.98px) {
+  .menu-column__list {
+    margin-top: 0;
+  }
 }
 .menu-column__item--active .sub-menu {
   display: grid;
@@ -1638,6 +1687,13 @@ html.dark {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--inner-padding);
   overflow-y: auto;
+}
+@media (max-width: 991.98px) {
+  .sub-menu {
+    position: initial;
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
 }
 .sub-menu--not-main {
   position: initial;
