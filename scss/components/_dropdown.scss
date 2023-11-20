@@ -186,5 +186,10 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include abstracts.breakpoint(lg) {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
   }
 }
