@@ -25,6 +25,8 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
 a,
@@ -41,8 +43,4 @@ select {
 
 .icon {
   filter: var(--icon-color);
-}
-
-.icon-res {
-  filter: var(--icon-color-reponsive);
 }

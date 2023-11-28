@@ -2,8 +2,8 @@
 
 html.dark {
   --text-color: #ffffff;
-  --icon-color: brightness(0) saturate(100%) invert(79%) sepia(2%) saturate(392%) hue-rotate(191deg) brightness(95%)
-    contrast(91%);
+  --icon-color: brightness(0) saturate(100%) invert(100%) sepia(45%) saturate(791%) hue-rotate(265deg) brightness(123%)
+    contrast(107%);
 
   --body-bg: #292e39;
   --header-bg-color: #171c28;
@@ -36,4 +36,13 @@ html.dark {
   --cate-item-thumb-bg: #292e39;
   --cate-item-title-color: #fff;
   --cate-item-desc-color: #ffffff;
+
+  // Button
+  --filter-btn-color: #fff;
+  --filter-btn-bg: #171c28;
+
+  // Product card
+  --product-card-bg: #171c28;
+  --product-card-shadow: rgba(0, 0, 0, 0.2);
+  --product-card-color: #fff;
 }
