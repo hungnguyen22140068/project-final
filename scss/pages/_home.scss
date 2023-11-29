@@ -18,8 +18,6 @@
   &__cate {
     --grid-gutter-x: 51px;
 
-    margin-top: 20px;
-
     @include abstracts.screen(lg) {
       --grid-gutter-x: 24px;
     }
@@ -34,11 +32,5 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-}
-
-.row {
-  @include abstracts.screen(sm) {
-    --grid-gutter-x: 40px;
   }
 }
