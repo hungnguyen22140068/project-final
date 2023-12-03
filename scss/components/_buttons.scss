@@ -43,6 +43,8 @@
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
   height: 44px;
   padding: 0 20px;
   font-size: 1.8rem;
@@ -52,7 +54,9 @@
   user-select: none;
 
   + .btn {
-    margin-left: 20px;
+    &:not(.btn--no-margin) {
+      margin-left: 20px;
+    }
   }
 
   &--text {
