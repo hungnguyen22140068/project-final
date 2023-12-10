@@ -2982,4 +2982,50 @@ html.dark {
   margin-top: 30px;
 }
 
+.product-preview {
+  padding: 0 30px;
+}
+.product-preview__list {
+  display: flex;
+  overflow: hidden;
+}
+.product-preview__item {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  padding-top: 92%;
+}
+.product-preview__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-preview__thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 30px;
+}
+.product-preview__thumb-img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  border: 1.5px solid #9e9da8;
+  border-radius: 8px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.product-preview__thumb-img:hover {
+  opacity: 1;
+}
+.product-preview__thumb-img--current {
+  opacity: 1;
+  border-color: #ffb700;
+}
+
 /*# sourceMappingURL=main.css.map */
